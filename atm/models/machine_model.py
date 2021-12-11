@@ -6,7 +6,7 @@ from decimal import Decimal
 class Machine(models.Model):
     """Machine model stores the information of ATM_Machine
     It has 6 fields
-    machine_id
+    machine_id----->PK
     location ---> Char(200)
     minimum_atm_balance ---> Decimal
     current_balance ----> Decimal
