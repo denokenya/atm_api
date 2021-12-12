@@ -40,7 +40,7 @@ urlpatterns = [
         version="1.0.0"
     ), name="bankapi-schema"),
     path('', include_docs_urls(
-        title="School",
+        title="Bank ATM API",
         description="API for the BANK",
     ), name="atmapi-docs")
 
