@@ -18,8 +18,8 @@ class Transaction(models.Model):
     # rescode ---> Integer
     # type_trans ---> Char(100)
     """
-    atmcard_num = models.ForeignKey(ATM_Card)
-    machine_id = models.ForeignKey(Machine)
+    atmcard_num = models.ForeignKey(ATM_Card, on_delete=models.CASCADE)
+    machine_id = models.ForeignKey(Machine, on_delete=models.CASCADE)
     tid = models.IntegerField("TRANSACTION ID", primary_key=True)
     date_time = models.DateTimeField("DATE TIME OF TRANSACTION")
     status = models.CharField("STATUS", max_length=100)
