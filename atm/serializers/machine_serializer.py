@@ -1,7 +1,7 @@
 from django.db.models import fields
 from rest_framework import serializers
 
-from models.machine_model import Machine
+from atm.models.machine_model import Machine
 
 
 class Machine_Serializer(serializers.ModelSerializer):
