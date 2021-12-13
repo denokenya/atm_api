@@ -12,7 +12,7 @@ from atm.models.account_model import Account
 from mixins .apimixin import DefaultMixin
 
 
-class Machine_Refill_ViewSet(DefaultMixin, ModelViewSet):
+class Account_ViewSet(DefaultMixin, ModelViewSet):
 
     queryset = Account.objects.all()
     serializer_class = Account_Serializer
