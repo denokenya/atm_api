@@ -11,7 +11,7 @@ from atm.models.machine_refill_model import Machine_Refill
 from mixins .apimixin import DefaultMixin
 
 
-class Machine_ViewSet(DefaultMixin, ModelViewSet):
+class Machine_Refill_ViewSet(DefaultMixin, ModelViewSet):
 
     queryset = Machine_Refill.objects.all()
     serializer_class = Machine_Serializer
